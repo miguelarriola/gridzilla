@@ -1,0 +1,135 @@
+/* //////////////////// GENERAL //////////////////// */
+
+:root {
+    --mainFont: Arial, Helvetica, sans-serif;
+    --titleFont: 'Bevan', 'Times New Roman', Times, serif;
+    --rectanglesFont: Haettenschweiler, Impact, 'Arial Narrow Bold', sans-serif;
+    --bgColor: #FDFDFD;
+    --selectedColor: #FC3432;
+    --secondaryColor: #DCDCDC;
+    --geenRectangle: #00D900;
+    --geenWord: 007200;
+    --redRectangel: #FA5A3C;
+    --redWord: #A00A00;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* Con esta operacion poer tamaños es como con los pixeles pero dividiendolos entre 10
+    por defecto el tamaño de letras es 16px, pero usando rems será 1.6rem */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--mainFont);
+    background: var(--bgColor);
+    min-height: 100%;
+    font-size: 1.4rem;
+    /* VISUAL HELP ///////////////// */
+    /* background-image: url(../doc/home.jpg); */
+    background-position: top center;
+    height: 2450px;
+    /* VISUAL HELP ///////////////// */
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 938px;
+}
+
+/* //////////////////// END GENERAL //////////////////// */
+
+/* //////////////////// HEADER //////////////////// */
+
+.header {
+    padding: 3rem 0;
+}
+
+.search-container {
+    float: right;
+    position: relative;
+    right: 33px;
+}
+
+.search-field {
+    width: 166px;
+    height: 34px;
+    padding-left: 10px;
+    border: 1px solid var(--secondaryColor);
+    border-right: none;
+    outline: none;
+}
+
+.search-field::placeholder {
+    color: var(--secondaryColor);
+}
+
+.search-field:hover, .search-field:focus {
+    background-color: var(--secondaryColor);
+}
+
+.search-field:hover::placeholder, .search-field:focus::placeholder {
+    color: white;
+}
+
+.search-button {
+    color: var(--secondaryColor);
+    background: white;
+    padding: 9px;
+    border: 1px solid var(--secondaryColor);
+    border-left: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: -33px;
+}
+
+.search-button:hover {
+    background-color: var(--secondaryColor);
+    color: white;
+}
+
+/* //////////////////// END HEADER //////////////////// */
+
+/* //////////////////// NAVEGATION BAR //////////////////// */
+
+.navegation-bar {
+    margin-top: 0.3rem;
+    border-top: 1px solid var(--secondaryColor);
+    display: flex;
+}
+
+.navegation-bar a {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: rgba(0, 0, 255, 0.2);
+}
+
+.navegation-bar a:nth-child(1) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.navegation-bar a:nth-child(2) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.navegation-bar a:nth-child(3) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.navegation-bar a:nth-child(4) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* //////////////////// END NAVEGATION BAR //////////////////// */
