@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Gridzilla</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gridzilla</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bevan">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -15,27 +15,21 @@
 
 <body>
 
-    <!-- HEADER -->
     <header class="header container">
         <img src="assets/logo.png" alt="logo">
-        <div class="search-container">
+        <form class="search-form">
             <input class="search-field" type="search" placeholder="Enter your search...">
             <i class="search-button fas fa-search"></i>
-        </div>
+        </form>
+        <nav class="container navegation-bar">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">blog</a>
+            <a href="#">contact</a>
+        </nav>
     </header>
-    <!-- END HEADER -->
 
-    <!-- NAVEGATION BAR -->
-    <nav class="container navegation-bar">
-        <a href="#">home</a>
-        <a href="#">about</a>
-        <a href="#">blog</a>
-        <a href="#">contact</a>
-    </nav>
-    <!-- END NAVEGATION BAR -->
-
-
-    <main>
+    <section>
         <img src="assets/01.jpg" alt="">
         <img src="assets/02.jpg" alt="">
         <img src="assets/03.jpg" alt="">
@@ -52,21 +46,24 @@
                 quibusdam dicta aliquid vel iure fuga!</p>
             <a href="#">More</a>
         </aside>
-    </main>
+    </section>
 
-    <section>
-        <h1></h1>
-        <nav>
-            <ul>
-                <a href="#">all</a>
-                <a href="#">news</a>
-                <a href="#">design</a>
-                <a href="#">print</a>
-                <a href="#">art</a>
-                <a href="#">development</a>
-            </ul>
-        </nav>
-        <div class="container">
+    <main>
+        <header>
+            <h1>A Theme Unlike Any Other. Simply Fantastic!</h1>
+            <nav>
+                <ul>
+                    <a href="#">all</a>
+                    <a href="#">news</a>
+                    <a href="#">design</a>
+                    <a href="#">print</a>
+                    <a href="#">art</a>
+                    <a href="#">development</a>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="articles">
             <article>
                 <img src="assets/blog-01.jpg" alt="">
                 <h3>Top iPhone Apps</h3>
@@ -176,13 +173,14 @@
                 <a href="#">More</a>
             </article>
         </div>
-        <div class="btns">
+
+        <div class="pagination">
             <button>1</button>
             <button>2</button>
             <button>3</button>
             <button>4</button>
         </div>
-    </section>
+    </main>
 
     <footer>
         <img src="assets/sprite-redes.png" alt="">
