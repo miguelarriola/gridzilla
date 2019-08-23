@@ -1,135 +1,288 @@
 /* //////////////////// GENERAL //////////////////// */
 
 :root {
-    --mainFont: Arial, Helvetica, sans-serif;
-    --titleFont: 'Bevan', 'Times New Roman', Times, serif;
-    --rectanglesFont: Haettenschweiler, Impact, 'Arial Narrow Bold', sans-serif;
-    --bgColor: #FDFDFD;
-    --selectedColor: #FC3432;
-    --secondaryColor: #DCDCDC;
-    --geenRectangle: #00D900;
-    --geenWord: 007200;
-    --redRectangel: #FA5A3C;
-    --redWord: #A00A00;
+  --mainFont: Arial, Helvetica, sans-serif;
+  --titleFont: "Bevan", "Times New Roman", Times, serif;
+  --rectanglesFont: Haettenschweiler, Impact, "Arial Narrow Bold", sans-serif;
+  --mainColor: #000000;
+  --bgColor: #fdfdfd;
+  --selectedColor: #fc3432;
+  --secondaryColor: #dcdcdc;
+  --greenRectangle: #00d900;
+  --greenWord: #007200;
+  --redRectangel: #fa5a3c;
+  --redWord: #a00a00;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    /* Con esta operacion poer tamaños es como con los pixeles pero dividiendolos entre 10
-    por defecto el tamaño de letras es 16px, pero usando rems será 1.6rem */
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-    font-family: var(--mainFont);
-    background: var(--bgColor);
-    min-height: 100%;
-    font-size: 1.4rem;
-    /* VISUAL HELP ///////////////// */
-    /* background-image: url(../doc/home.jpg); */
-    background-position: top center;
-    height: 2450px;
-    /* VISUAL HELP ///////////////// */
+  font-family: var(--mainFont);
+  background: var(--bgColor);
+  min-height: 100%;
+  font-size: 1.4rem;
+  /* background-image: url(../doc/home.jpg); */
 }
 
-.articles {
-    margin: 0 auto;
-    max-width: 938px;
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 938px;
 }
 
-/* //////////////////// END GENERAL //////////////////// */
+a {
+  text-decoration: none;
+}
 
 /* //////////////////// HEADER //////////////////// */
 
-.header {
-    padding: 3rem 0;
+header {
+  padding: 3rem 0;
 }
 
-.search-form {
-    float: right;
-    position: relative;
-    right: 33px;
+form.search {
+  float: right;
+  position: relative;
+  right: 3.2rem;
 }
 
-.search-field {
-    width: 166px;
-    height: 34px;
-    padding-left: 10px;
-    border: 1px solid var(--secondaryColor);
-    border-right: none;
-    outline: none;
+form.search input {
+  width: 166px;
+  height: 34px;
+  padding-left: 10px;
+  border: 1px solid var(--secondaryColor);
+  border-right: none;
+  outline: none;
 }
 
-.search-field::placeholder {
-    color: var(--secondaryColor);
+form.search input::placeholder {
+  color: var(--secondaryColor);
 }
 
-.search-field:hover, .search-field:focus {
-    background-color: var(--secondaryColor);
+form.search input:hover,
+form.search input:focus {
+  background-color: var(--secondaryColor);
 }
 
-.search-field:hover::placeholder, .search-field:focus::placeholder {
-    color: white;
+form.search input:hover::placeholder,
+form.search input:focus::placeholder {
+  color: white;
 }
 
-.search-button {
-    color: var(--secondaryColor);
-    background: white;
-    padding: 9px;
-    border: 1px solid var(--secondaryColor);
-    border-left: none;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: -33px;
+form.search button {
+  color: var(--secondaryColor);
+  background: white;
+  padding: 0.8rem 0.8rem 0.8rem 0.9rem;
+  border: 1px solid var(--secondaryColor);
+  border-left: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -3.2rem;
+  outline: none;
 }
 
-.search-button:hover {
-    background-color: var(--secondaryColor);
-    color: white;
+form.search button:hover {
+  background-color: var(--secondaryColor);
+  color: white;
 }
 
-/* //////////////////// END HEADER //////////////////// */
+/* //////////////////// NAVEGATION //////////////////// */
 
-/* //////////////////// NAVEGATION BAR //////////////////// */
-
-.navegation-bar {
-    margin-top: 0.3rem;
-    border-top: 1px solid var(--secondaryColor);
-    display: flex;
+nav {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
 }
 
-.navegation-bar a {
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background: rgba(0, 0, 255, 0.2);
+nav a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--mainColor);
 }
 
-.navegation-bar a:nth-child(1) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+nav hr {
+  background-color: var(--secondaryColor);
+  border: none;
+  width: 1px;
+  height: 20px;
+  margin: 0;
 }
 
-.navegation-bar a:nth-child(2) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+nav a:hover {
+  background-color: var(--selectedColor);
+  color: var(--bgColor) !important;
 }
 
-.navegation-bar a:nth-child(3) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+nav a.selected {
+  color: var(--selectedColor);
 }
 
-.navegation-bar a:nth-child(4) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+/* //////////////////// MENU //////////////////// */
+
+main header {
+  padding-bottom: 1rem;
 }
 
-/* //////////////////// END NAVEGATION BAR //////////////////// */
+nav.menu {
+  border-top: 1px solid var(--secondaryColor);
+}
+
+nav.menu a {
+  padding: 2rem;
+}
+
+nav.menu a.selected {
+  border-top: 1px solid;
+}
+
+/* //////////////////// COLLAGE //////////////////// */
+
+.collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 74px 183px 110px 116px;
+  grid-gap: 6px;
+  justify-content: center;
+  background-color: var(--bgColor);
+  position: relative;
+}
+
+.collage::after,
+.collage::before {
+  content: "";
+  width: 96%;
+  height: 5%;
+  background-color: #000;
+  position: absolute;
+  bottom: 2.5%;
+  box-shadow: 0 5px 8px #000;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.collage::after {
+  left: 1%;
+  transform: rotate(-1.5deg);
+}
+.collage::before {
+  right: 1%;
+  transform: rotate(1.5deg);
+}
+
+.collage img[src="assets/04.jpg"] {
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+.collage div {
+  text-transform: uppercase;
+  font: 3rem Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.collage img + div {
+  color: var(--greenWord);
+  background-color: var(--greenRectangle);
+}
+.collage div + div {
+  color: var(--redWord);
+  background-color: var(--redRectangel);
+}
+
+/* //////////////////// MAIN //////////////////// */
+
+h1 {
+  font-family: var(--titleFont);
+  text-align: center;
+}
+
+/* //////////////////// BLOGS //////////////////// */
+
+.blogs {
+  column-count: 4;
+  column-gap: 26px;
+}
+.blogs article {
+  border: 1px solid var(--secondaryColor);
+  background-color: #fff;
+  break-inside: avoid;
+  width: 222px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.blogs article .content {
+  padding: 1.2rem;
+}
+.blogs article .content h3 {
+  margin: 0;
+}
+.blogs article .content time {
+  font-size: small;
+  color: gray;
+}
+.blogs article .content p {
+  line-height: 2rem;
+  margin: 0.8rem 0 0.8rem 0;
+}
+.blogs article .content a {
+  color: var(--mainColor);
+}
+.blogs article .content a::before {
+  content: url(../assets/post-more.png);
+  margin-right: 1rem;
+}
+
+/* //////////////////// FILTER //////////////////// */
+
+nav.filter a {
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.pagination {
+  margin: 4rem 0 4rem 0;
+}
+.pagination button {
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  background: #fcfff4;
+  background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #fcfff4 0%,
+    #dfe5d7 40%,
+    #b3bead 100%
+  );
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+/* //////////////////// FOOTER //////////////////// */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 0;
+  border-top: 1px solid var(--secondaryColor);
+}
+footer .sub-container p {
+  text-align: right;
+  margin: 0;
+}
+
+small {
+  font-size: small;
+  color: gray;
+}

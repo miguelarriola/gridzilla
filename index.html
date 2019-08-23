@@ -3,190 +3,214 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gridzilla</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bevan">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gridzilla</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bevan">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
 </head>
 
 <body>
 
-    <header class="header container">
-        <img src="assets/logo.png" alt="logo">
-        <form class="search-form">
-            <input class="search-field" type="search" placeholder="Enter your search...">
-            <i class="search-button fas fa-search"></i>
-        </form>
-        <nav class="container navegation-bar">
-            <a href="#">home</a>
-            <a href="#">about</a>
-            <a href="#">blog</a>
-            <a href="#">contact</a>
-        </nav>
+  <header class="container">
+    <img src="assets/logo.png" alt="logo">
+    <form class="search">
+      <input type="search" placeholder="Enter your search...">
+      <button>
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+    <nav class="menu">
+      <a class="selected" href="#">home</a>
+      <hr>
+      <a href="#">about</a>
+      <hr>
+      <a href="#">blog</a>
+      <hr>
+      <a href="#">contact</a>
+      <hr>
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="collage">
+      <img src="assets/01.jpg" alt="">
+      <img src="assets/02.jpg" alt="">
+      <img src="assets/03.jpg" alt="">
+      <img src="assets/04.jpg" alt="">
+      <img src="assets/05.jpg" alt="">
+      <div>
+        <p>responsive</p>
+      </div>
+      <div>
+        <p>latest news</p>
+      </div>
+      <img src="assets/08.jpg" alt="">
+      <img src="assets/09.jpg" alt="">
+    </div>
+    <aside>
+      <h3>Top iPhone Apps</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
+        repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
+        quibusdam dicta aliquid vel iure fuga!</p>
+      <a href="#">More</a>
+    </aside>
+  </section>
+
+  <main class="container">
+    <header>
+      <h1>A Theme Unlike Any Other. Simply Fantastic!</h1>
+      <nav class="filter">
+        <a class="selected" href="#">all</a>/
+        <a href="#">news</a>/
+        <a href="#">design</a>/
+        <a href="#">print</a>/
+        <a href="#">art</a>/
+        <a href="#">development</a>
+      </nav>
     </header>
 
-    <section>
-        <img src="assets/01.jpg" alt="">
-        <img src="assets/02.jpg" alt="">
-        <img src="assets/03.jpg" alt="">
-        <img src="assets/04.jpg" alt="">
-        <img src="assets/05.jpg" alt="">
-        <div>responsive</div>
-        <div>latest news</div>
-        <img src="assets/08.jpg" alt="">
-        <img src="assets/09.jpg" alt="">
-        <aside>
-            <h3>Top iPhone Apps</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                quibusdam dicta aliquid vel iure fuga!</p>
+    <div class="blogs">
+      <article>
+        <img src="assets/blog-01.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
+        </div>
+      </article>
+      <article>
+        <img src="assets/blog-02.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <timedatetime="2012-06-15">June 15, 2012</time>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+              pariatur doloremque explicabo.</p>
             <a href="#">More</a>
-        </aside>
-    </section>
-
-    <main>
-        <header>
-            <h1>A Theme Unlike Any Other. Simply Fantastic!</h1>
-            <nav>
-                <ul>
-                    <a href="#">all</a>
-                    <a href="#">news</a>
-                    <a href="#">design</a>
-                    <a href="#">print</a>
-                    <a href="#">art</a>
-                    <a href="#">development</a>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="articles">
-            <article>
-                <img src="assets/blog-01.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-02.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-03.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-04.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-05.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-06.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-07.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-08.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-09.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-10.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-11.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
-            <article>
-                <img src="assets/blog-12.jpg" alt="">
-                <h3>Top iPhone Apps</h3>
-                <h4>June 15, 2012</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus,
-                    repudiandae, ab obcaecati aliquam quo assumenda pariatur doloremque explicabo. Animi nihil quas
-                    quibusdam dicta aliquid vel iure fuga!</p>
-                <a href="#">More</a>
-            </article>
         </div>
-
-        <div class="pagination">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
+      </article>
+      <article>
+        <img src="assets/blog-03.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
         </div>
-    </main>
+      </article>
+      <article>
+        <img src="assets/blog-04.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
+        </div>
+      </article>
+      <article>
+        <img src="assets/blog-05.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
+        </div>
+      </article>
+      <article>
+        <img src="assets/blog-06.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
+        </div>
+      </article>
+      <article>
+        <img src="assets/blog-07.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
+        </div>
+      </article>
+      <article>
+        <img src="assets/blog-08.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
+        </div>
+      </article>
+      <article>
+        <img src="assets/blog-09.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
+        </div>
+      </article>
+      <article>
+        <img src="assets/blog-10.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
+        </div>
+      </article>
+      <article>
+        <img src="assets/blog-11.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
+        </div>
+      </article>
+      <article>
+        <img src="assets/blog-12.jpg" alt="">
+        <div class="content">
+          <h3>Top iPhone Apps</h3>
+          <time datetime="2012-06-15">June 15, 2012</time>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt officia repellendus, ab quo
+            pariatur doloremque explicabo.</p>
+          <a href="#">More</a>
+        </div>
+      </article>
+    </div>
 
-    <footer>
-        <img src="assets/sprite-redes.png" alt="">
-        <p>Best PSD Freebies | info@bestpsdfreebies.com</p>
-        <p>Copyright 2012 Gridzilla Theme www.bestpsdfreebies.com</p>
-    </footer>
+    <div class="pagination">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+    </div>
+  </main>
+
+  <footer class="container">
+    <img src="assets/sprite-redes.png" alt="">
+    <div class="sub-container">
+      <p>Best PSD Freebies | info@bestpsdfreebies.com</p>
+      <p><small>Copyright &copy; 2012 Gridzilla Theme www.bestpsdfreebies.com</small></p>
+    </div>
+  </footer>
 
 </body>
 
